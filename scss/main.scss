@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    height: 100vh;
+    width: 800px;
+    background-image: linear-gradient(#3F4B59, #333D46);
+    color: #fff;
+    text-align: center;
+    border: 1px solid #1C232D;
+
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    .rate-info {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+
+    p {
+        margin-bottom: 10px;
+        font-size: 26px;
+        font-weight: 200;
+    }
+}
+
+.app-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    input, select {
+        color: #fff;
+        border: none;
+        background: none;
+        text-align: center;
+    }
+    input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 60px;
+        box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.425);
+    }
+    
+    select {
+        padding: 10px 20px;
+        font-size: 36px;
+        cursor: pointer;
+    }
+    option {
+        color: #333;
+    }
+}
+
+
+
+.app-body input:focus, .app-body select:focus {
+    outline: none;
+    color: rgb(67,171,255);
+}
+
+.section-left, .section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swap {
+    align-self: flex-end;
+    margin: 5px;
+    padding: 5px 50px;
+    background-image: linear-gradient(45deg, #2b89e7, #11e763);
+    font-size: 30px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.swap:focus {
+    outline: none;
+    background-image: linear-gradient(45deg, #317fcc, #1fc06a);
+}
+
+@media (min-width: 992px){
+    .wrapper{
+        height: auto;
+        border-radius: 15px;
+        h1 {
+            margin-bottom: 25px;
+        }
+    
+        p {
+            margin-bottom: 25px;
+        }
+    }
+    .app-body {
+        flex-direction: row;
+
+        span{
+            margin: 25px;
+        }
+    }
+}
