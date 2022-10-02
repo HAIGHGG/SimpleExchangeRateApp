@@ -1,3 +1,3 @@
 ## Simple exchange rate using API
 
-https://haighgg.github.io/SimpleExchangeRateApp/
+[Demo](https://haighgg.github.io/SimpleExchangeRateApp/)
